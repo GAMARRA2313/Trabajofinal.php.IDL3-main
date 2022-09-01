@@ -101,7 +101,7 @@ export default {
 				})
 				.then((result) => {
 					if (result.isConfirmed) {
-						let sector_id = item.id;
+						let tipo_id = item.id;
 						axios
 							.delete("http://laravel.test/api/sectores/" + sector_id)
 							.then(function (response) {
